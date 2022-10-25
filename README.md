@@ -2,6 +2,8 @@
 Restaurant Blog 🍔
   <br>
 </h1>
+<h4 align='center'>
+Food & restaurant review blog made with React, Sanity CMS and TailwindCSS
 
 <img src="./public/restaurant-blog-ss.png">
 
