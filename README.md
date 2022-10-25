@@ -9,7 +9,7 @@ Food & restaurant review blog made with React, Sanity CMS and TailwindCSS
 
 <p align="center">
   <a href="#technology-used">Technology</a> |
-  <a href="">Live Demo</a> |
+  <a href="https://restaurant-blog.vercel.app/">Live Demo</a> |
   <a href="#contact">Contact</a> |
 </p>
 
