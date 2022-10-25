@@ -124,10 +124,10 @@ export default function Navbar() {
       </nav>
 
       {/* Header Categories */}
-      <header className="border-b bg-[#070707] p-2">
+      <header className="bg-[#070707] p-2">
         <div className="container mx-auto flex h-4 justify-center md:space-x-8">
           <div className="flex text-sm text-white">
-            <span className="flex gap-6 tracking-wide">
+            <span className="flex gap-6 font-semibold uppercase tracking-wide lg:text-gray-300">
               {categories.map((category) => (
                 <span className="cursor-pointer hover:text-[#A51C30]">
                   {category.title}
