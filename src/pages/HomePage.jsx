@@ -57,7 +57,7 @@ export default function Homepage() {
                 <div className="absolute bottom-8 left-8">
                   <div>
                     <Link to={`/blog/${stories[0].slug.current}`}>
-                      <h1 className="mb-6 text-4xl font-semibold capitalize leading-none tracking-wide text-white text-shadow-xl hover:underline lg:text-5xl">
+                      <h1 className="mb-6 text-4xl font-semibold capitalize tracking-wide text-white text-shadow-xl hover:underline lg:text-5xl">
                         {stories[0].title}
                       </h1>
                     </Link>
