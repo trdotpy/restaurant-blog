@@ -32,9 +32,9 @@ export default function Homepage() {
       .catch(console.error)
   }, [])
 
-  // useEffect(() => {
-  //   document.title = 'Restaurant Blog'
-  // }, [])
+  useEffect(() => {
+    document.title = 'TABLE - Restaurant Blog'
+  }, [])
 
   return (
     <>
@@ -57,13 +57,13 @@ export default function Homepage() {
                 <div className="absolute bottom-8 left-8">
                   <div>
                     <Link to={`/blog/${stories[0].slug.current}`}>
-                      <h1 className="mb-6 text-4xl font-semibold capitalize leading-none tracking-wide text-white hover:underline lg:text-5xl">
+                      <h1 className="mb-6 text-4xl font-semibold capitalize leading-none tracking-wide text-white text-shadow-xl hover:underline lg:text-5xl">
                         {stories[0].title}
                       </h1>
                     </Link>
                   </div>
 
-                  <p className="mb-8 font-semibold text-white md:w-1/2">
+                  <p className="mb-8 font-semibold text-white text-shadow-xl md:w-1/2">
                     {`${stories[0].body[0].children[0].text.substring(
                       0,
                       200
@@ -71,8 +71,7 @@ export default function Homepage() {
                   </p>
                   <Link
                     to={`/blog/${stories[0].slug.current}`}
-                    className="rounded bg-[#A51C30] py-2 px-8 tracking-wide text-white shadow transition-all duration-300 hover:opacity-90"
-                    // rounded bg-[#A51C30] py-2 px-8 tracking-wide text-[#E8E9EB] transition-all duration-100 hover:opacity-75
+                    className="text-md rounded bg-[#A51C30] py-2 px-8 text-white shadow transition-all duration-300 hover:opacity-90"
                   >
                     Read More
                   </Link>

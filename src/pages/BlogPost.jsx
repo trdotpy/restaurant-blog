@@ -63,7 +63,7 @@ export default function BlogPost() {
               </div>
             </div>
 
-            <div className="text-gray-100">
+            <div className="text-gray-100 text-shadow-xl">
               <PortableText value={blogpost.body} />
             </div>
           </div>
