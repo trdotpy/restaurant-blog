@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="max-w-screen mx-auto flex h-16 items-center justify-between sm:px-6 lg:px-8">
           <div className="flex flex-1 cursor-pointer items-center justify-end space-x-4">
             <div className="flex flex-1 items-center justify-between">
-              <nav className="lg:font-lg hidden lg:flex lg:gap-4 lg:text-xs lg:uppercase lg:tracking-wide lg:text-white">
+              <nav className="lg:font-lg hidden lg:flex lg:gap-4 lg:text-xs lg:uppercase lg:tracking-wide lg:text-gray-300">
                 <Link to="/">
                   <p className="block h-16 font-semibold leading-[4rem] hover:text-[#DF2935]">
                     Home
@@ -55,13 +55,10 @@ export default function Navbar() {
                 </Link>
               </div>
 
-              <div className="ml-8 flex items-center">
+              <div className="ml-8 flex items-center text-gray-300">
                 <div className="flex items-center border-gray-100">
                   <span className="hidden sm:block">
-                    <Link
-                      to="/create"
-                      className="p-6 text-white hover:text-[#DF2935]"
-                    >
+                    <Link to="/create" className="p-6 hover:text-[#A51C30]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -82,10 +79,10 @@ export default function Navbar() {
                   <span className="hidden sm:block">
                     <Link
                       to="/account"
-                      className="block p-6 text-white hover:text-[#DF2935]"
+                      className="block p-6 hover:text-[#A51C30]"
                     >
                       <svg
-                        className="h-4 w-4"
+                        className="h-5 w-5"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -102,17 +99,14 @@ export default function Navbar() {
                   </span>
 
                   <span className="hidden sm:block">
-                    <Link
-                      to="/login"
-                      className="p-6 text-white hover:text-[#DF2935]"
-                    >
+                    <Link to="/login" className="p-6 hover:text-[#A51C30]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="h-6 w-6"
+                        className="h-5 w-5"
                       >
                         <path
                           strokeLinecap="round"
@@ -133,7 +127,7 @@ export default function Navbar() {
       <header className="border-b bg-[#070707] p-2">
         <div className="container mx-auto flex h-4 justify-center md:space-x-8">
           <div className="flex text-sm text-white">
-            <span className="flex gap-6">
+            <span className="flex gap-6 tracking-wide">
               {categories.map((category) => (
                 <span className="cursor-pointer hover:text-[#A51C30]">
                   {category.title}

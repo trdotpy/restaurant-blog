@@ -34,10 +34,10 @@ export default function Blog() {
   return (
     <>
       <Navbar />
-      <div>
-        <section className="mx-auto mb-10 grid max-w-7xl grid-cols-1 gap-8 px-5 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="p-10">
+        <section className="mx-auto mb-10 grid max-w-7xl grid-cols-1 gap-8 px-5 md:grid-cols-2 lg:grid-cols-3">
           {stories.map((story) => (
-            <article className="overflow-hidden rounded-md border border-slate-400">
+            <article className="overflow-hidden border border-[#101010] shadow-xl">
               {story.mainImage && (
                 <img
                   src={story.mainImage.asset.url}
