@@ -44,7 +44,7 @@ export default function Homepage() {
       ) : (
         <>
           {stories[0] && (
-            <section className="mx-auto my-20 max-w-7xl px-5">
+            <section className="mx-auto my-12 max-w-7xl px-5">
               <article className="relative">
                 {stories[0].mainImage && (
                   <img
@@ -63,7 +63,7 @@ export default function Homepage() {
                     </Link>
                   </div>
 
-                  <p className="mb-8 text-slate-100 md:w-1/2">
+                  <p className="mb-8 font-semibold text-white md:w-1/2">
                     {`${stories[0].body[0].children[0].text.substring(
                       0,
                       200
@@ -71,7 +71,8 @@ export default function Homepage() {
                   </p>
                   <Link
                     to={`/blog/${stories[0].slug.current}`}
-                    className="rounded bg-white py-2 px-8 tracking-wide text-slate-800 shadow transition-all duration-200 hover:opacity-75"
+                    className="rounded bg-[#A51C30] py-2 px-8 tracking-wide text-white shadow transition-all duration-300 hover:opacity-90"
+                    // rounded bg-[#A51C30] py-2 px-8 tracking-wide text-[#E8E9EB] transition-all duration-100 hover:opacity-75
                   >
                     Read More
                   </Link>
@@ -81,6 +82,11 @@ export default function Homepage() {
           )}
         </>
       )}
+      <div className="mb-8 space-y-2 text-center">
+        <h2 className="py-2 text-3xl font-semibold uppercase leading-4 text-[#f3f3f3]">
+          Latest Posts
+        </h2>
+      </div>
 
       {/* Cards */}
       <section className="mx-auto mb-10 grid max-w-7xl grid-cols-1 gap-8 px-5 md:grid-cols-2 lg:grid-cols-3 ">
@@ -116,7 +122,7 @@ export default function Homepage() {
       <div className="mx-auto mb-20 flex max-w-7xl items-end justify-center px-5">
         <Link
           to="/blog"
-          className="rounded bg-[#A51C30] py-2 px-8 tracking-wide text-[#E8E9EB] transition-all duration-100 hover:opacity-75 "
+          className="rounded bg-[#A51C30] py-2 px-8 tracking-wide text-[#E8E9EB] transition-all duration-100 hover:opacity-75"
         >
           Read More
         </Link>

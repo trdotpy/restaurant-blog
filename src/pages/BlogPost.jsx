@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Client } from '../api/Client'
 import { Link, useParams } from 'react-router-dom'
 import { PortableText } from '@portabletext/react'
+import Navbar from '../components/Navbar'
 
 export default function BlogPost() {
   const [blogpost, setBlogpost] = useState([])
@@ -31,11 +32,12 @@ export default function BlogPost() {
   }, [slug])
 
   useEffect(() => {
-    document.title = `Reading | ${blogpost.title}`
+    document.title = `${blogpost.title}`
   }, [blogpost.title])
 
   return (
     <>
+      <Navbar />
       <div className="mx-auto bg-[#070707] p-5 text-[#F3F3F3] sm:p-10 md:p-16">
         <div className="mx-auto flex max-w-4xl flex-col overflow-hidden rounded">
           {blogpost.mainImage && (
@@ -51,9 +53,14 @@ export default function BlogPost() {
                 <p className="text-5xl font-bold">{blogpost.title}</p>
               </Link>
 
-              <Link href="/" className=" text-gray-400 hover:underline">
-                <p className="text-sm">{blogpost.name}</p>
-              </Link>
+              <div className="text-gray-400">
+                <p className="text-xs">
+                  Written by{' '}
+                  <span className="text-sm text-[#A51C30]">
+                    {blogpost.name}
+                  </span>
+                </p>
+              </div>
             </div>
 
             <div className="text-gray-100">
